@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #paragraph-example {
+      color: blueviolet;
+      /* font-size: large; */
+      /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+      /* font-weight: bold;/ */
+      font: italic bold 1.2em "Fira Sans", sans-serif;
+    }
+
+    .multi-example {
+      background-color: yellow;
+    }
+
+    h1 {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+1. 태그는 공통 속성이 있고 개별 속성이 있습니다. 
+
+<br>한줄 끊기 <br>
+<p id="paragraph-example"> paragraph 문단 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odio itaque voluptatibus ratione aperiam deleniti voluptates, quasi nisi magni cupiditate, tenetur repellendus vitae repellat hic in accusantium, voluptas molestiae eum?</p>
+<p> paragraph 문단2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat expedita reprehenderit, quia quibusdam inventore illum in omnis aliquid fuga fugit vel vitae id unde facilis sit dolor accusamus qui.</p>
+<hr>
+<h1>제목</h1>
+<h2>1~6까지의 사이즈가 있습니다</h2>
+<h3>1~6까지의 사이즈가 있습니다</h3>
+<h4>1~6까지의 사이즈가 있습니다</h4>
+<h5>1~6까지의 사이즈가 있습니다</h6>
+<h6>1~6까지의 사이즈가 있습니다</h6>
+<!-- <h7>1~6까지의 사이즈가 있습니다</h7> -->
+<h>1~6까지의 사이즈가 있습니다</h1>
+<!-- html은 에러를 알려주지 않습니다. 그래서 꼼꼼하게 보셔야 합니다.-->
+<hr id="tag-example">
+부모 태그와 자식태그로 구성된 경우도 있습니다.
+  <ol>
+    <li>사과</li>
+    <li>포도</li>
+    <li>딸기</li>
+  </ol>
+
+  <ul class="multi-example">
+    <li>사과</li>
+    <li>포도</li>
+    <li>딸기</li>
+  </ul>
+
+  <hr>
+  <table border=1> <!-- 테이블의 시작 -->
+    <thead> <!-- 제목 라인 -->
+      <tr> <!-- 행을 표현 -->
+        <th>제목</th> <!-- 컬럼 -->
+        <th>날짜</th> <!-- 컬럼 -->
+        <th>조회수</th> <!-- 컬럼 -->
+      </tr>
+    </thead>
+   
+    <tbody> <!-- 표에 들어갈 내용 -->
+      <tr> <!-- 행을 표현 -->
+        <td>안녕하세요</td> <!-- 컬럼 -->
+        <td>2024-01-19</td> <!-- 컬럼 -->
+        <td>3</td> <!-- 컬럼 -->
+      </tr>
+      <tr> <!-- 행을 표현 -->
+        <td>안녕하세요2</td> <!-- 컬럼 -->
+        <td>2024-01-20</td> <!-- 컬럼 -->
+        <td>333</td> <!-- 컬럼 -->
+      </tr>
+    </tbody>
+   </table> <!-- 테이블의 끝 -->
+
+ 
+<dl class="multi-example">
+  <dt>Beast of Bodmin</dt>
+  <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+  <dt>Morgawr</dt>
+  <dd>A sea serpent.</dd>
+
+  <dt>Owlman</dt>
+  <dd>A giant owl-like creature.</dd>
+</dl>
+
+<hr>
+
+작성한 그대로 내용을 화면에 출력하고 싶을 때
+<pre>
+def hello()
+  print("hello")
+</pre>
+<hr class="multi-example">
+멀티미디어 데이터<p>
+1. 이미지 <br>
+<img src="https://imgur.com/Cg0Ml5C" alt="짱구의 이미지"/>
+<img src="https://i.imgur.com/Cg0Ml5C.png" alt="짱구의 이미지"/>  <br>
+2. 오디오 <br>
+<audio controls src="\data\NEFFEX.mp3"></audio>
+3. 비디오 <br>
+<video controls src="data\movie.mp4"></video>
+<br>
+
+4. html 안에 html 파일을 iframe 방법으로 연결해서 링크 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0z2o_Xt0YgA?si=BPGgZaFu2oAy6Nwu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr>
+<a href="#tag-example" >링크1</a>
+<a href="#paragraph-example" >링크2</a>
+<a href=".multi-example" >링크3</a> <!-- class로는 이동 불가 -->
+어느 태그건 사용하는 공통 속성 id, class를 통해 특정 장소로 이동할 수도 있습니다.
+- id (#) : 고유값. 한 html 파일에 1개만 있어야 합니다
+- class (.) : 공통된 속성을 가져야하는 덩어리. 한 파일 안에 몇개든 있을 수 있습니다.
+
+<hr>
+특정 부분을 강조하고 싶을 때: <i>italic(기울임)</i>, <b>strong(진하게)</b>를 표시합니다.
+<!-- HTML5 문법 -->
+특정 부분을 강조하고 싶을 때: <em>italic(기울임)</em>, <strong>strong(진하게)</strong>를 표시합니다.
+</body>
+</html>

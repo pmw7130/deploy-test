@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        .class1 {
+            background-color: aqua;
+        }
+
+        #title {
+            background-color: brown;
+        }
+
+        .ex1 {
+            border: black 1px dashed;
+        }
+    </style>
+
+</head>
+<body>
+
+  
+    본문 내용입니다
+    Live Server, Live Preview,
+    Open in Browser
+
+    <hr>
+    1. grid system
+
+    <div class="container text-center">
+        <div class="row ex1">
+          <div class="col ex1">
+            Column 1
+          </div>
+          <div class="col ex1">
+            Column 2
+          </div>
+          <div class="col ex1">
+            Column 3
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col ex1">
+              Column 1
+            </div>
+            <div class="col ex1">
+              Column 2
+            </div>
+          </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col ex1">
+            1 of 3
+          </div>
+          <div class="col-6 ex1">
+            2 of 3 (wider)
+          </div>
+          <div class="col ex1">
+            3 of 3
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 ex1">
+            1 of 3
+          </div>
+          <div class="col-5 ex1">
+            2 of 3 (wider)
+          </div>
+          <div class="col ex1">
+            3 of 3
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      2. 제목 - display-숫자라는 class로 크기를 결정해라
+      <h1 class  = "display-1"> 제목1</h1>
+      <h1 class  = "display-2"> 제목1</h1>
+      <h1 class  = "display-3"> 제목1</h1>
+      <h1 class  = "display-4"> 제목1</h1>
+      <h1 class  = "display-5"> 제목1</h1>
+      <h1 class  = "display-6"> 제목1</h1>
+
+
+      3. img 태그
+      - 상대경로 사용
+      <img src="./data/chicken.png" class = "img-thumbnail" alt="짱구의 이미지"/>  <br>
+      <img src="./data/chicken.png" width="100" class = "img-fluid" alt="짱구의 이미지"/>  <br>
+
+      <img src="./data/chicken.png" width="500" class="rounded float-start"  alt="짱구의 이미지"/>  <br>
+      <img src="./data/chicken.png" width="500" class="rounded float-end"  alt="짱구의 이미지"/>  <br>
+
+
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="bd-content ps-lg-4 ex1">
+        
+
+        <h2 id="theme-colors">Theme colors</h2>
+  <p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in Bootstrap&rsquo;s <code>scss/_variables.scss</code> file.</p>
+  <div class="row">
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-primary text-danger">집가고싶다<span class = "text-white">&nbsp; Primary</span></div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-secondary text-white">Secondary</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-success text-white">Success</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-danger text-white">Danger</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-warning text-dark">Warning</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-info text-dark">Info</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-light text-dark">Light</div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="p-3 mb-3 bg-dark text-white">Dark</div>
+    </div>
+  
+  </div>
+  
+  <p class="text-primary">.text-primary</p>
+  <p class="text-secondary">.text-secondary</p>
+  <p class="text-success">.text-success</p>
+  <p class="text-danger">.text-danger</p>
+  <p class="text-warning bg-dark">.text-warning</p>
+  <p class="text-info bg-dark">.text-info</p>
+  <p class="text-light bg-dark">.text-light</p>
+  <p class="text-dark">.text-dark</p>
+  <p class="text-body">.text-body</p>
+  <p class="text-muted">.text-muted</p>
+  <p class="text-white bg-dark">.text-white</p>
+  <p class="text-black-50">.text-black-50</p>
+  <p class="text-white-50 bg-dark">.text-white-50</p>
+  
+  <div class="text-danger">This is default primary text</div>
+  <div class="text-danger text-opacity-75">This is 75% opacity primary text</div>
+  <div class="text-danger text-opacity-50">This is 50% opacity primary text</div>
+  <div class="text-danger text-opacity-25">This is 25% opacity primary text</div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          집
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>가고싶다</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          집집
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>가고싶다.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          집집집
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>집가고싶다집가고싶다</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr>
+7. 버튼
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+<hr>
+8. 뱃지
+<button type="button" class="btn btn-primary">
+    집가고싶다. <span class="badge text-bg-secondary">999999999999999999999999999</span>
+  </button>
+
+<hr>
+9. Carousel
+이미지 파일 같은 경우 사용하시면 비율을 넣을 때 일치시켜서 넣어주는 것을 권장합니다.
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./data/chicken.png" class="d-block " alt="딸랏롯빠이">
+      </div>
+      <div class="carousel-item">
+        <img src="./data/chicken2.png" class="d-block " alt="홍콩참치만두">
+      </div>
+      <div class="carousel-item">
+        <img src="./data/chicken3.png" class="d-block " alt="영미오리탕">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<hr>
+
+
+
+    </body>
+    </html>
